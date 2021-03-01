@@ -7,12 +7,45 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "@types/axios": "^0.14.0",
+    "@types/clipboard": "^2.0.1",
+    "@types/lodash": "^4.14.168",
+    "@types/md5": "^2.3.0",
+    "@types/qs": "^6.9.5",
+    "@types/vue-router": "^2.0.0",
+    "axios": "^0.21.1",
+    "clipboard": "^2.0.6",
+    "dayjs": "^1.10.4",
+    "element-plus": "^1.0.2-beta.32",
+    "intersection-observer": "^0.12.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "mitt": "^2.1.0",
+    "qs": "^6.9.6",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4",
+    "vuex": "^4.0.0",
+    "vuex-persistedstate": "^4.0.0-beta.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.1.4",
+    "@types/eslint": "^7.2.6",
+    "@types/eslint-config-prettier": "^6.11.0",
+    "@types/eslint-plugin-prettier": "^3.1.0",
+    "@types/prettier": "^2.2.1",
+    "@types/sass": "^1.16.0",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vitejs/plugin-vue-jsx": "^1.1.2",
     "@vue/compiler-sfc": "^3.0.5",
-    "typescript": "^4.1.3",
-    "vite": "^2.0.1"
+    "@vuedx/typecheck": "^0.6.3",
+    "@vuedx/typescript-plugin-vue": "^0.6.3",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "7.6.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.2",
+    "vite": "^2.0.4",
+    "vue-eslint-parser": "^7.5.0"
   }
 }
