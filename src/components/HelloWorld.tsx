@@ -1,7 +1,7 @@
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: 'App',
+  name: 'HelloWorld',
   props: {
     msg: {
       type: String,
@@ -9,12 +9,20 @@ export default defineComponent({
     }
   },
   setup(prop) {
-    const count = ref(0)
+    const count = ref(0);
+    const editClickCount = ref(0)
+    const onEditClick = () => {
+      console.log('edit click')
+      editClickCount.value++;
+    }
     return () => (
       <>
         <h1>{prop.msg}</h1>
-        <button onClick={() => {count.value ++}}>count is: { count.value }</button>
-        <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+        <el-button onClick={() => {count.value ++}}>count is: { count.value }</el-button>
+        <p onClick={onEditClick}>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+        <div >
+          edit click count: {editClickCount.value}
+        </div>
       </>
     );
   },
